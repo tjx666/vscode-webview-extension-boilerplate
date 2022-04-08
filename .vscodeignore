@@ -1,0 +1,40 @@
+node_modules/
+!node_modules/fsevents
+
+# develop
+.husky
+.vscode/
+typings/
+configs/
+scripts/
+src/
+
+# test and output
+.vscode-test/
+test/
+out/test/
+test-workspace/
+.nyc_output/
+coverage/
+
+# configs
+.gitignore
+.vscodeignore
+tsconfig.json
+tsconfig.test.json
+.nvmrc
+.eslintrc.js
+.eslintignore
+.prettierrc
+yarn.lock
+**/*.js.map
+**/.eslintrc.js
+
+web
+dist
+!dist/web
+!dist/extension.js
+images
+!images/logo.png
+babel.config.js
+lint-staged.config.js

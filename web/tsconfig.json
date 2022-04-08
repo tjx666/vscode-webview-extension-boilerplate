@@ -1,0 +1,21 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        /* Basic Options */
+        "jsx": "react-jsx",
+        "isolatedModules": true,
+        "baseUrl": "./",
+        "paths": {
+            "utils/*": ["utils/*"],
+            "pages/*": ["pages/*"],
+            "assets/*": ["assets/*"],
+            "components/*": ["components/*"],
+            "@/*": ["./*"]
+        },
+        "types": ["webpack-env"],
+
+        // 下面这些选项对 babel 编译 TypeScript 没有作用但是可以让 VSCode 等编辑器正确提示错误
+        "target": "ES2021",
+        "module": "ESNext"
+    }
+}
